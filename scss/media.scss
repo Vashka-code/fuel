@@ -1,0 +1,648 @@
+@media (max-width: 1720px){
+  .wrapper_big{
+    width: 95%;
+  }
+}
+@media (max-width: 1550px){
+  .phones{
+    align-items: center;
+  }
+  .phones__img{
+    width: 600px;
+    height: auto;
+  }
+  .phones__content{
+    width: 100%;
+  }
+  .phones__inf{
+    width: 640px;
+  }
+}
+@media (max-width: 1420px){
+  .marquee__line{
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  .marquee__over{
+    width: 1500px;
+  }
+}
+@media (max-width: 1320px){
+  .reviews__over{
+    width: 404px;
+    margin: 0 auto;
+    .slick-list{
+      padding-top: 40px;
+    }
+    .slick-dots{
+      li{
+        width: 10px;
+        height: 10px;
+        button{
+          width: 9px;
+          height: 9px;
+          border-radius: 100%;
+          background: #989898;
+          border: 1px solid #989898;
+        }
+        button:before{
+          display: none;
+        }
+        &.slick-active{
+          button{
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  .reviews__download{
+    margin-top: 70px;
+    padding-top: 30px;
+  }
+  .reviews__list {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1300px){
+  .toOrder__item{
+    flex-direction: column;
+  }
+  .toOrder__hand{
+    display: none;
+  }
+  .toOrder__phone{
+    margin-left: 0;
+  }
+  .toOrder__step{
+    margin-left: 0;
+  }
+  .toOrder__text {
+    margin-left: 0;
+  }
+  .toOrder__item2, .toOrder__item3{
+    margin-top: 40px;
+  }
+  .toOrder__text2 {
+    margin-left: 0;
+  }
+  .toOrder__step2{
+    width: auto;
+    height: auto;
+  }
+  .toOrder__step3{
+    box-shadow: none;
+  }
+  .toOrder__step {
+    order: 1;
+  }
+  .toOrder__text, .toOrder__text2  {
+    order: 2;
+    margin-top: 20px;
+  }
+  .toOrder__phone {
+    order: 3;
+    margin-top: 40px;
+  }
+  .toOrder{
+    background: none;
+  }
+  .centerLine{
+    display: none;
+  }
+}
+@media (max-width: 1280px){
+  .phones{
+    flex-direction: column;
+  }
+  .wrapper{
+    width: 95%;
+  }
+  .mobileApplications, .reviews{
+    padding-top: 100px 0;
+  }
+  .phones__inf{
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+@media (max-width: 1220px){
+  .bulkPrices__content{
+    justify-content: center;
+    .qrBlock{
+      margin-top: 60px;
+    }
+  }
+  .bulkPrices{
+    background-position: 0% 100%;
+  }
+}
+@media (max-width: 1160px){
+  .header__photo{
+    display: none;
+  }
+  .photo__img_mob{
+    display: block;
+  }
+  .header__information{
+    width: 100%;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__area {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .photo__img_mob{
+    display: block;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+  .qrBlock_mt{
+    width: 105%;
+    margin-top: 0;
+    margin-left: -2.5%;
+    padding: 20px 0;
+    background: #000;
+    justify-content: center;
+    .qrBlock__bl{
+      display: none;
+    }
+    .qrBlock__qr:nth-child(2){
+      margin-left: 20px;
+    }
+    .download_mt{
+      margin-top: 0;
+    }
+  }
+  .header__information{
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 1060px){
+  .mobileApplications__list{
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .mobileApplications__item{
+    margin: 20px 5px;
+  }
+  .title{
+    font-size: 32px;
+  }
+  .header__item{
+    margin-left: 40px;
+  }
+}
+@media (max-width: 1000px){
+  .menu_btn{
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+  .header__download{
+    display: none;
+  }
+  .header__nav{
+    position: fixed;
+    opacity: 0;
+    transform: scaleX(0) translateX(-10%);
+    transform-origin: left center;
+    left: 0;top: 0;
+    z-index: 2;
+    width: 100%;
+    background: #000;
+    height: 100vh;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active{
+      transform: scaleX(1) translateX(0%);
+      opacity: 1;
+    }
+  }
+  .header__menu {
+    &.active{
+      width: 100%;
+      z-index: 5;
+      position: fixed;
+      .logo__text{
+        color: #FFFFFF;
+      }
+    }
+    &.active.fixed{
+      width: 100%;
+      position: fixed;
+      .menu_btn span,
+      .menu_btn span::before,
+      .menu_btn span::after{
+        background: #fff;
+      }
+    }
+    &.fixed{
+      .header__link{
+        color: #fff;
+        &:hover{
+          color: #72AF32;
+        }
+      }
+      .menu_btn span,
+      .menu_btn span::before,
+      .menu_btn span::after{
+        background: #000;
+      }
+    }
+  }
+  .header__list{
+    margin-top: 110px;
+    flex-direction: column;
+  }
+  .header__item{
+    margin-left: 0;
+    margin-top: 40px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  .link{
+    font-size: 24px;
+  }
+  .logo{
+    position: relative;
+    z-index: 3;
+  }
+  .header__menu .wrapper_big{
+    justify-content: space-between;
+  }
+  .header__content{
+    margin-top: 50px;
+  }
+  .header{
+    padding-top: 60px;
+    &.active{
+      padding-top: 0;
+      .header__menu{
+        margin-top: 0;
+      }
+    }
+  }
+  .marquee{
+    padding-right: 30px;
+    position: absolute;
+    left: 0;top: 0;
+    z-index: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .marquee__moreBtn{
+    display: flex;
+  }
+  .marquee__about{
+    display: none;
+  }
+  .marquee__line{
+    width: 80%;
+    max-height: 40px;
+    overflow: hidden;
+    transition: 0.6s;
+    &.active{
+      max-height: 540px;
+    }
+  }
+  .marquee__over{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: -10px;
+    margin-top: -26px;
+  }
+  .line__textBlock{
+    margin: 0 10px;
+    margin-top: 26px;
+  }
+  .marquee__more {
+    position: static;
+    margin-top: 24px;
+    width: 100%;
+    padding: 0;
+    background: #fff;
+    font-size: 16px;
+    color: #212833;
+  }
+  .marquee__moreLine{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .hr{
+      display: block;
+      margin-left: 10px;
+      height: 1px;
+      background: rgba(33, 40, 51, 0.2);
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 970px){
+  .buy__information{
+    width: 420px;
+  }
+}
+@media (max-width: 900px){
+  .mobileApplications, .reviews, .toOrder, .faq, .buy, .bulkPrices {
+    padding: 50px 0;
+  }
+  .reviews__area{
+    width: 100%;
+    max-width: 648px;
+  }
+  .toOrder__list{
+    margin-top: 60px;
+  }
+  .faq__wrapper{
+    width: 95%;
+  }
+  .phones__img{
+    width: 100%;
+    height: auto;
+    max-width: 620px;
+  }
+  .phones__inf{
+    width: 90%;
+    max-width: 640px;
+  }
+  .buy__photo{
+    display: none;
+  }
+  .buy__photo_mob{
+    display: block;
+    width: 90%;
+    height: auto;
+    display: block;
+    max-width: 157px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .buy{
+    background-image: url('../img/p12.png');
+    background-position: 100% 100%;
+  }
+  .buy__information{
+    width: 80%;
+  }
+  .buy__content{
+    justify-content: center;
+  }
+  .footer__content{
+    flex-direction: column;
+  }
+  .footer__text{
+    order: 2;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+    &:nth-child(2){
+      margin-top: 0;
+    }
+  }
+  .footer__text_normal{
+    order: 1;
+  }
+  .reviews__area{
+    justify-content: center;
+  }
+  .reviews__btns{
+    margin-top: 12px;
+  }
+  .photo__img_mob{
+    width: 95%;
+    max-width: 616px;
+  }
+  .popup{
+    width: 100%;
+    padding: 30px 20px;
+    max-width: 760px;
+  }
+  .popup__over{
+    margin-top: 20px;
+  }
+  .popup__item{
+    padding-left: 0;padding-right: 0;
+  }
+}
+@media (max-width: 570px){
+  .phones__list{
+    width: 90%;
+  }
+}
+@media (max-width: 550px){
+  .mobileApplications, .reviews, .toOrder, .faq, .buy, .bulkPrices {
+    padding: 40px 0;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .mobileApplications__item {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .mobileApplications__list{
+    margin-top: 0;
+  }
+  .mobileApplications__circle{
+    width: auto;
+    height: auto;
+    background: #fff;
+    border-radius: 0;
+  }
+  .mobileApplications__icon{
+    width: 110px;
+    height: auto;
+  }
+  .reviews__over{
+    width: 100%;
+    max-width: 404px;
+  }
+  .review {
+    padding: 50px 15px 72px;
+  }
+  .review__values{
+    width: 95%;
+  }
+  .toOrder__phone{
+    width: 90%;
+    max-width: 240px;
+  }
+  .toOrder__phone2 {
+    width: 90%;
+    max-width: 180px;
+  }
+  .toOrder__phone3{
+    width: 100%;
+    max-width: 370px;
+  }
+  .title_white {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .buy__text{
+    width: 100%;
+  }
+  .bulkPrices__listInform{
+    margin-top: 30px;
+  }
+  .bulkPrices__itemInform{
+    width: 135px;
+    margin-top: 20px;
+  }
+  .bulkPrices__listInform{
+    margin-top: 15px;
+  }
+  .qrBlock__bl{
+    display: none;
+  }
+  .bulkPrices__content .qrBlock {
+    margin-top: 30px;
+  }
+  .faq__question{
+    padding: 14px 12px;
+  }
+  .faq__questionText {
+    font-size: 14px;
+  }
+  .faq__item{
+    max-height: 74px;
+  }
+  .faq__answer{
+    margin-top: 30px;
+    padding: 0px 40px 40px;
+  }
+  .phones__inf{
+    padding: 40px 0;
+  }
+  .phones__data{
+    top: 46px;
+  }
+  .phones__list{
+    margin-top: 54px;
+  }
+  .phones__text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  .phones__item::before {
+    width: 14px;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+  .phones__btn {
+    width: 100%;
+    margin-top: 46px;
+  }
+  .download {
+    width: 140px;
+  }
+  .reviews__over{
+    width: 95%;
+  }
+  .buy__information{
+    width: 100%;
+  }
+  .buy__title{
+    margin-top: 0;
+  }
+  .buy_btns{
+    margin-top: 40px;
+  }
+  .footer__text{
+    font-size: 14px;
+  }
+  .footer{
+    padding: 20px 0;
+  }
+  .header__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .header__area {
+    display: none;
+  }
+  .header{
+    background: url('../img/oil3.svg') no-repeat -9% 305%,radial-gradient(46.35% 147.45% at 53.65% 59.02%,#72af32 0,#4b9b3f 100%);
+  }
+  .header__content{
+    margin-top: 30px;
+  }
+  .photo__img_mob{
+    margin-top: 45px;
+  }
+  .logo__image{
+    width: 40px;
+    height: 40px;
+  }
+  .logo__icon{
+    width: 17px;
+    height: auto;
+  }
+  .logo__text {
+    margin-left: 14px;
+  }
+  .wrapper_big{
+    width: 90%;
+  }
+  .reviews__title {
+    width: 270px;
+    margin: 0 auto;
+  }
+  .header__menu.fixed{
+    padding: 10px 0;
+  }
+  .download_mt{
+    border: 1px solid #3C3E41;
+    background: #000;
+  }
+  .marquee__more {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .text12__green{
+    font-size: 10px;
+  }
+  .text_16_light{
+    font-size: 12px;
+  }
+  .marquee__moreBtn{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .marquee__line{
+    width: 85%;
+  }
+  .marquee{
+    padding: 12px 15px;
+  }
+  .line__textBlock{
+    margin: 0;
+    margin-left: 7px;
+    margin-top: 26px;
+  }
+  .marquee__over{
+    margin-left: -7px;
+  }
+  .faq__questionText{
+    margin-left: 15px;
+  }
+  .faq__answer{
+    margin-top: 10px;
+  }
+}
